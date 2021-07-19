@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:greenhornscoe/api/blogapi.dart';
+import 'package:greenhornscoe/model/bloglist.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:greenhornscoe/widgets/blogcard.dart';
 import 'package:greenhornscoe/view/blogfeed.dart';
@@ -18,7 +19,7 @@ class _BlogFeedState extends State<BlogFeed> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: SafeArea(
-        child: FutureBuilder(
+        child: FutureBuilder<BlogList>(
           future: MediumAPI().getAllBlogs(),
           builder: (context, snapshot) {
             int count = snapshot.data!.blogs.length;
@@ -52,7 +53,7 @@ class _BlogFeedState extends State<BlogFeed> {
                     ),
                     for (int i = 0; i < count; i++)
                       BlogCard(
-                        blog: snapshot.data.blogs[i],
+                        blog: snapshot.data!.blogs[i],
                       ),
                   ],
                 ),
