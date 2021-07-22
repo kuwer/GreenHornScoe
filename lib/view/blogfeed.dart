@@ -22,20 +22,20 @@ class _BlogFeedState extends State<BlogFeed> {
         child: FutureBuilder<BlogList>(
           future: MediumAPI().getAllBlogs(),
           builder: (context, snapshot) {
-            int count = snapshot.data!.blogs.length;
+            //  int count = snapshot.data!.blogs.length;
             if (snapshot.hasData) {
               return SingleChildScrollView(
                 child: Column(
                   children: [
                     Padding(
                       padding: const EdgeInsets.symmetric(vertical: 15.0),
-                      child: Row(
+                      child: Column(
                         mainAxisSize: MainAxisSize.min,
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: [
-                          Image.network(
-                            "https://img.icons8.com/ios-filled/250/000000/medium-monogram--v1.png",
-                            height: 45.0,
+                          Image.asset(
+                            "assets/images/miniicon.png",
+                            height: 150.0,
                           ),
                           SizedBox(
                             width: 8.0,
@@ -43,15 +43,16 @@ class _BlogFeedState extends State<BlogFeed> {
                           Text(
                             "GreenHorn Scoe",
                             style: TextStyle(
+                              fontFamily: 'GoogleSans',
                               fontSize: 22.0,
-                              fontWeight: FontWeight.bold,
+                              fontWeight: FontWeight.w600,
                               letterSpacing: 1.5,
                             ),
                           ),
                         ],
                       ),
                     ),
-                    for (int i = 0; i < count; i++)
+                    for (int i = 0; i < snapshot.data!.blogs.length; i++)
                       BlogCard(
                         blog: snapshot.data!.blogs[i],
                       ),

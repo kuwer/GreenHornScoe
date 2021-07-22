@@ -19,13 +19,16 @@ class BlogCard extends StatelessWidget {
         ),
       ),
       child: Card(
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15.0),
+        ),
         child: Container(
           padding: EdgeInsets.all(12.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: height * 0.2,
+                height: height * 0.23,
                 width: width,
                 child: Stack(
                   fit: StackFit.expand,
@@ -43,7 +46,7 @@ class BlogCard extends StatelessWidget {
                         padding: EdgeInsets.all(8.0),
                         color: Colors.red[900],
                         child: Text(
-                          "Published Date: " +
+                          "Date: " +
                               blog.dateB.substring(0, blog.dateB.length - 8),
                           style: TextStyle(
                             fontSize: height * 0.015,
@@ -61,8 +64,9 @@ class BlogCard extends StatelessWidget {
               Text(
                 blog.titleB,
                 style: TextStyle(
+                  fontFamily: 'GoogleSans',
                   fontSize: height * 0.025,
-                  fontWeight: FontWeight.bold,
+                  fontWeight: FontWeight.w600,
                 ),
               ),
               SizedBox(
