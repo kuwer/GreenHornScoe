@@ -26,5 +26,12 @@ class SlidebarConstants {
     "LinkedIN": "https://www.linkedin.com/in/kuwer-bhendarkar-1b4a54163/",
     "Image": "https://avatars.githubusercontent.com/u/40052047?s=400&u=24ad757c2a6d4715b7dfecbf51a59fd5e70871f7&v=4"
   };
+  
+
+  static final List<String> feedbackCCRecipients = [
+    'bhendarkarkuwer@gmail.com',
+  ];
+
+  static final List<String> feedbackRecipients = ['greenhornscoe@gmail.com'];
 
 }

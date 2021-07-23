@@ -28,7 +28,7 @@ class BlogCard extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Container(
-                height: height * 0.23,
+                height: height * 0.25,
                 width: width,
                 child: Stack(
                   fit: StackFit.expand,

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:greenhornscoe/screens/resources/resourcepage.dart';
 import 'package:greenhornscoe/screens/slidescreen/faq.dart';
+import 'package:greenhornscoe/screens/slidescreen/helpcenter.dart';
 import 'package:greenhornscoe/screens/slidescreen/vision.dart';
 
 class MyDrawer extends StatelessWidget {
@@ -42,7 +44,11 @@ class MyDrawer extends StatelessWidget {
               style: TextStyle(fontFamily: 'GoogleSans', fontSize: 16),
             ),
             trailing: new Icon(Icons.folder_open_rounded),
-            onTap: (){},
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => new ResourcePage()));
+            },
           ),
           new Divider(),
 
@@ -79,7 +85,11 @@ class MyDrawer extends StatelessWidget {
               style: TextStyle(fontFamily: 'GoogleSans', fontSize: 16),
             ),
             trailing: new Icon(Icons.arrow_right),
-            onTap: (){},
+            onTap: (){
+              Navigator.of(context).pop();
+              Navigator.of(context).push(new MaterialPageRoute(
+                builder: (BuildContext context) => new MyFeedback()));
+            },
           ),
           
           new Divider(),
