@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:greenhornscoe/login/authservice.dart';
 import 'package:greenhornscoe/screens/resources/resourcepage.dart';
 import 'package:greenhornscoe/screens/slidescreen/faq.dart';
 import 'package:greenhornscoe/screens/slidescreen/helpcenter.dart';
@@ -99,7 +100,9 @@ class MyDrawer extends StatelessWidget {
               style: TextStyle(fontFamily: 'GoogleSans', fontSize: 16),
             ),
             trailing: new Icon(Icons.logout),
-            onTap: (){},
+            onTap: (){
+              AuthService().signOut();
+            },
           ),
           new Divider(),
         ],

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "155092731597",
+    "project_id": "greenhornscoe-9e695",
+    "storage_bucket": "greenhornscoe-9e695.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155092731597:android:bd39acd45a0898a52b8b84",
+        "android_client_info": {
+          "package_name": "com.example.greenhornscoe"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155092731597-q7827j7t4jjf1dntfje5pm8vvvi3gj68.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.greenhornscoe",
+            "certificate_hash": "8a131bf37502f516ae2f1fc303da6a5905c69576"
+          }
+        },
+        {
+          "client_id": "155092731597-jkagqoj07qfe30qfacue4qddjao9if1s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGSHT1YLQvL9Gwq7fmX0BDtfhH0ydhmrU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155092731597-jkagqoj07qfe30qfacue4qddjao9if1s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
