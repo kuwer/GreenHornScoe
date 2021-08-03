@@ -1,16 +1,40 @@
-# greenhornscoe
 
-A new Flutter project.
+# Greenhonr SCOE App
 
-## Getting Started
+Greenhorn App is the official app of SCOE - The mentorship society of SCOE.
 
-This project is a starting point for a Flutter application.
+## Idea
 
-A few resources to get you started if this is your first Flutter project:
+During our first year in college, I often felt intimidated by our new surroundings, and found myself pondering upon questions like "How to start programming?" "Where I can find good resources ?" "How not to miss-out an opportunity" "Which book to refer ?" Greenhorn SCOE aims to answer all these questions and more by giving them good resources and real time news related to college events and important activities.
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+## Features
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+- Resource Center\
+The app provides multiple resources for different domains. From developemnt to ML , you'll find everything in the resource center.
+
+- Events\
+The app lists down upcoming events happening in and outside college. 
+
+- Feedback/Help Center\
+The app has a help center where the user can send feedback, suggestions or complaints to Greenhorn SCOE. 
+
+- FAQ's\
+The app answers all you app realted doubts in this section.
+
+## Tech stack
+1. Database: Firebase
+3. Frontend: Flutter
+
+## Screenshots
+<span>
+<img src="/Screenshots/login.jpg" height="300px" width="150px">
+<img src="/Screenshots/feed.jpg" height="300px" width="150px">
+<img src="/Screenshots/slidebar.jpg" height="300px" width="150px">
+<img src="/Screenshots/resources.jpg" height="300px" width="150px">
+</span>
+<br>
+<span>
+<img src="/Screenshots/feedback.jpg" height="300px" width="150px">
+<img src="/Screenshots/blog.jpg" height="300px" width="150px">
+</span>
+
