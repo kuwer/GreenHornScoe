@@ -1,5 +1,5 @@
 
-# Greenhonr SCOE App
+# Greenhorn SCOE App
 
 Greenhorn App is the official app of SCOE - The mentorship society of SCOE.
 
